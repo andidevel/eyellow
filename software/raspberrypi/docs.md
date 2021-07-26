@@ -8,7 +8,7 @@ https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
 
 ## Starting EYEllowCAM on boot
 
-First copy the **EYEllowCAM** software (*eyellowcam* and the *lib* folder) to */home/pi/bin/eyellowcam*
+First copy the **EYEllowCAM** software (*eyellowcam* and the *lib* folder) to */path/to/eyellowcam*
 folder.
 
 Then copy the *eyellowcam.service* to */etc/systemd/system*. After that you can start the server:
