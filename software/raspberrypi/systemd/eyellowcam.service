@@ -1,0 +1,16 @@
+[Unit]
+Description=EYEllowCAM Server
+Requires=network.target
+After=network.target
+
+[Service]
+Environment=APP=/path/to/eyellowcam/eyellowcam.py
+Type=simple
+Restart=always
+RestartSec=1
+
+WorkingDirectory=/path/to/eyellowcam
+ExecStart=/usr/bin/python3 ${APP}
+
+[Install]
+WantedBy=multi-user.target
